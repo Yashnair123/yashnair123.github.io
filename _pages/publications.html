@@ -1,36 +1,37 @@
 ---
 layout: archive
-title: "Publications"
-permalink: /publications/
+title: "Research"
+permalink: /research/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<h2>Publications and manuscripts</h2>
 
-{% include base_path %}
+<p>
+Y. Gui*, Y. Jin*, <u>Y. Nair*</u>, and Z. Ren*. <b>ACS: An interactive framework for conformal selection</b>. 2025. <a href="https://arxiv.org/abs/2507.15825">[arXiv]</a> <a href="https://github.com/zhimeir/acs_paper">[code]</a>
+</p>
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<!-- <p class = 'medium'> -->
+<p>
+<u>Y. Nair</u>, Y. Jin, J. Yang, and E. Candès. <b>Diversifying conformal selections</b>. 2025. <a href="https://arxiv.org/abs/2506.16229">[arXiv]</a> <a href="https://github.com/Yashnair123/diverseSelect">[code]</a>
+</p>
+
+<p>
+  N. Boehmer*, <u>Y. Nair*</u>, S. Shah*, L. Janson, A. Taneja, and M. Tambe. <b>Evaluating the effectiveness of index-based treatment allocation</b>. <i>AAAI Conference on Artificial Intelligence: Artificial Intelligence for Social Impact Track (Oral)</i>, Philadelphia, Pennsylvania, February 2025. <a href="https://arxiv.org/abs/2402.11771">[arXiv]</a>
+</p>
 
 
+<p>
+  <u>Y. Nair</u> and L. Janson. <b>Randomization tests for adaptively collected data</b>. 2023. <a href="https://arxiv.org/abs/2301.05365">[arXiv]</a> <a href="https://github.com/Yashnair123/RTs-for-AdaptiveData">[code]</a>
+</p>
 
+<p>
+  <u>Y. Nair</u> and N. Jiang. <b>A spectral approach to off-policy evaluation for POMDPs</b>. <i>Workshop on Theoretical Foundations of Reinforcement Learning (ICML)</i>. 2021. <a href="https://arxiv.org/abs/2109.10502">[arXiv]</a>
+</p>
+
+<p>
+  <u>Y. Nair</u> and F. Doshi-Velez. <b>PAC bounds for imitation and model-based batch learning of contextual Markov decision processes</b>. <i>Workshop on Theoretical Foundations of Reinforcement Learning (ICML)</i>. 2020. <a href="https://arxiv.org/abs/2006.06352">[arXiv]</a>
+</p>
+
+<p class = 'small'> (* denotes equal contribution or alphabetical ordering)
+</p>
